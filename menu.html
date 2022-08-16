@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      @font-face {
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url("./fonts/playfair-display-v30-latin-800.woff2") format("woff2");
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Playfair Display", serif;
+      }
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <script defer src="observer.js"></script>
+    <title>Menu</title>
+  </head>
+  <body>
+    <header>
+      <p class="navLogo">Barista</p>
+      <nav class="mainNav">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./ourCoffee.html">Our Coffee</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./careers.html">Careers</a></li>
+          <li><a id="contactBtn" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="burger">
+        <div class="burgerBar burgerTop"></div>
+        <div class="burgerBar burgerMid"></div>
+        <div class="burgerBar burgerBottom"></div>
+      </div>
+    </header>
+
+    <main class="pageLayout">
+      <section class="menuPageHero sectionLayout">
+        <div class="heroTextBtnWrap">
+          <h2 class="hxFontSize">Our Menu</h2>
+          <p class="pFontSize">Peruse our range of fantastic coffees.</p>
+        </div>
+        <img
+          height="560"
+          width="800"
+          class="heroImg"
+          src="./images/homePageAbout/coffeeHomePageAbout800.jpg"
+          srcset="
+            ./images/homePageAbout/coffeeHomePageAbout800.webp   800w,
+            ./images/homePageAbout/coffeeHomePageAbout1200.webp 1200w,
+            ./images/homePageAbout/coffeeHomePageAbout1600.webp 1600w,
+            ./images/homePageAbout/coffeeHomePageAbout2000.webp 2000w
+          "
+          srcset="
+            ./images/homePageAbout/coffeeHomePageAbout800.jpg   800w,
+            ./images/homePageAbout/coffeeHomePageAbout1200.jpg 1200w,
+            ./images/homePageAbout/coffeeHomePageAbout1600.jpg 1600w,
+            ./images/homePageAbout/coffeeHomePageAbout2000.jpg 2000w
+          "
+          sizes="(max-width: 768px) 100vw, 50vw"
+          alt="close up of flat white coffee being poured"
+        />
+      </section>
+
+      <section class="tagline tagTwo">
+        <h3 class="tagFontSize">
+          Coffee is our passion, our BARISTAS strive to deliver your perfect
+          cup.
+        </h3>
+      </section>
+
+      <section class="menuPage">
+        <div class="menuGrid">
+          <div class="menuCard">
+            <h3>Espresso</h3>
+            <p class="price">$5.00</p>
+            <p class="description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repellat, dignissimos eveniet nobis perferendis harum pariatur?
+              Quas delectus voluptatibus nulla necessitatibus similique.
+            </p>
+            <div class="menuImgAspectRatio">
+              <img
+                height="300"
+                width="400"
+                class="menuImg"
+                data-src="./images/menuPageMenu/espresso/espresso400.jpg"
+                data-srcset="
+                ./images/menuPageMenu/espresso/espresso400.webp 400w,
+                ./images/menuPageMenu/espresso/espresso500.webp 500w,
+                ./images/menuPageMenu/espresso/espresso600.webp 600w,
+                ./images/menuPageMenu/espresso/espresso700.webp 700w,
+                ./images/menuPageMenu/espresso/espresso800.webp 800w,
+                ./images/menuPageMenu/espresso/espresso1200.webp 1200w,
+                ./images/menuPageMenu/espresso/espresso1600.webp 1600w
+              "
+                sizes="(max-width: 700px) 89vw, (min-width: 701px) and (max-width: 1000px) 35vw, (min-width: 1001px) and (max-width: 1400px) 25vw, 18.66vw"
+                alt="close up of flat white coffee being poured"
+              />
+            </div>
+          </div>
+
+          <div class="menuCard">
+            <h3>Latte</h3>
+            <p class="price">$5.00</p>
+            <p class="description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repellat, dignissimos eveniet nobis perferendis harum pariatur?
+              Quas delectus voluptatibus nulla necessitatibus similique.
+            </p>
+            <div class="menuImgAspectRatio">
+              <img
+                height="300"
+                width="400"
+                class="menuImg"
+                data-src="./images/menuPageMenu/latte/latte400.jpg"
+                data-srcset="
+                ./images/menuPageMenu/latte/latte400.webp 400w,
+                ./images/menuPageMenu/latte/latte500.webp 500w,
+                ./images/menuPageMenu/latte/latte600.webp 600w,
+                ./images/menuPageMenu/latte/latte700.webp 700w,
+                ./images/menuPageMenu/latte/latte800.webp 800w,
+                ./images/menuPageMenu/latte/latte1200.webp 1200w,
+                ./images/menuPageMenu/latte/latte1600.webp 1600w
+              "
+                sizes="(max-width: 700px) 89vw, (max-width: 1000px) 35vw, (max-width: 1400px) 25vw, 18.66vw"
+                alt="close up of flat white coffee being poured"
+              />
+            </div>
+          </div>
+          <div class="menuCard">
+            <h3>Flat White</h3>
+            <p class="price">$5.00</p>
+            <p class="description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repellat, dignissimos eveniet nobis perferendis harum pariatur?
+              Quas delectus voluptatibus nulla necessitatibus similique.
+            </p>
+            <div class="menuImgAspectRatio">
+              <img
+                height="300"
+                width="400"
+                class="menuImg"
+                data-src="./images/menuPageMenu/flatWhite/flatWhite400.jpg"
+                data-srcset="
+                ./images/menuPageMenu/flatWhite/flatWhite400.webp 400w,
+                ./images/menuPageMenu/flatWhite/flatWhite500.webp 500w,
+                ./images/menuPageMenu/flatWhite/flatWhite600.webp 600w,
+                ./images/menuPageMenu/flatWhite/flatWhite700.webp 700w,
+                ./images/menuPageMenu/flatWhite/flatWhite800.webp 800w,
+                ./images/menuPageMenu/flatWhite/flatWhite1200.webp 1200w,
+                ./images/menuPageMenu/flatWhite/flatWhite1600.webp 1600w
+              "
+                sizes="(max-width: 700px) 89vw, (max-width: 1000px) 35vw, (max-width: 1400px) 25vw, 18.66vw"
+                alt="close up of flat white coffee being poured"
+              />
+            </div>
+          </div>
+          <div class="menuCard">
+            <h3>Macchiato</h3>
+            <p class="price">$6.00</p>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Provident enim nihil quidem voluptatibus nostrum commodi laborum
+              est!
+            </p>
+            <div class="menuImgAspectRatio">
+              <img
+                height="300"
+                width="400"
+                class="menuImg"
+                data-src="./images/menuPageMenu/macchiato/macchiato400.jpg"
+                data-srcset="
+                ./images/menuPageMenu/macchiato/macchiato400.webp 400w,
+                ./images/menuPageMenu/macchiato/macchiato500.webp 500w,
+                ./images/menuPageMenu/macchiato/macchiato600.webp 600w,
+                ./images/menuPageMenu/macchiato/macchiato700.webp 700w,
+                ./images/menuPageMenu/macchiato/macchiato800.webp 800w,
+                ./images/menuPageMenu/macchiato/macchiato1200.webp 1200w,
+                ./images/menuPageMenu/macchiato/macchiato1600.webp 1600w
+              "
+                sizes="(max-width: 700px) 89vw, (max-width: 1000px) 35vw, (max-width: 1400px) 25vw, 18.66vw"
+                alt="close up of flat white coffee being poured"
+              />
+            </div>
+          </div>
+          <div class="menuCard">
+            <h3>Capuccino</h3>
+            <p class="price">$5.00</p>
+            <p class="description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repellat, dignissimos eveniet nobis perferendis harum pariatur?
+              Quas delectus voluptatibus nulla necessitatibus similique.
+            </p>
+            <div class="menuImgAspectRatio">
+              <img
+                height="300"
+                width="400"
+                class="menuImg"
+                data-src="./images/menuPageMenu/capuccino/capuccino400.jpg"
+                data-srcset="
+                ./images/menuPageMenu/capuccino/capuccino400.webp 400w,
+                ./images/menuPageMenu/capuccino/capuccino500.webp 500w,
+                ./images/menuPageMenu/capuccino/capuccino600.webp 600w,
+                ./images/menuPageMenu/capuccino/capuccino700.webp 700w,
+                ./images/menuPageMenu/capuccino/capuccino800.webp 800w,
+                ./images/menuPageMenu/capuccino/capuccino1200.webp 1200w,
+                ./images/menuPageMenu/capuccino/capuccino1600.webp 1600w
+              "
+                sizes="(max-width: 700px) 89vw, (max-width: 1000px) 35vw, (max-width: 1400px) 25vw, 18.66vw"
+                alt="close up of flat white coffee being poured"
+              />
+            </div>
+          </div>
+          <div class="menuCard">
+            <h3>Americano</h3>
+            <p class="price">$6.00</p>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Provident enim nihil quidem voluptatibus nostrum commodi laborum
+              est!
+            </p>
+            <div class="menuImgAspectRatio">
+              <img
+                height="300"
+                width="400"
+                class="menuImg"
+                data-src="./images/menuPageMenu/americano/americano400.jpg"
+                data-srcset="
+                ./images/menuPageMenu/americano/americano400.webp 400w,
+                ./images/menuPageMenu/americano/americano500.webp 500w,
+                ./images/menuPageMenu/americano/americano600.webp 600w,
+                ./images/menuPageMenu/americano/americano700.webp 700w,
+                ./images/menuPageMenu/americano/americano800.webp 800w,
+                ./images/menuPageMenu/americano/americano1200.webp 1200w,
+                ./images/menuPageMenu/americano/americano1600.webp 1600w
+              "
+                sizes="(max-width: 700px) 89vw, (max-width: 1000px) 35vw, (max-width: 1400px) 25vw, 18.66vw"
+                alt="close up of flat white coffee being poured"
+              />
+            </div>
+          </div>
+          <div class="menuCard">
+            <h3>Pourover Black</h3>
+            <p class="price">$6.00</p>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Provident enim nihil quidem voluptatibus nostrum commodi laborum
+              est!
+            </p>
+            <div class="menuImgAspectRatio">
+              <img
+                height="300"
+                width="400"
+                class="menuImg"
+                data-src="./images/menuPageMenu/pouroverBlack/pouroverBlack400.jpg"
+                data-srcset="
+                ./images/menuPageMenu/pouroverBlack/pouroverBlack400.webp 400w,
+                ./images/menuPageMenu/pouroverBlack/pouroverBlack500.webp 500w,
+                ./images/menuPageMenu/pouroverBlack/pouroverBlack600.webp 600w,
+                ./images/menuPageMenu/pouroverBlack/pouroverBlack700.webp 700w,
+                ./images/menuPageMenu/pouroverBlack/pouroverBlack800.webp 800w,
+                ./images/menuPageMenu/pouroverBlack/pouroverBlack1200.webp 1200w,
+                ./images/menuPageMenu/pouroverBlack/pouroverBlack1600.webp 1600w
+              "
+                sizes="(max-width: 700px) 89vw, (max-width: 1000px) 35vw, (max-width: 1400px) 25vw, 18.66vw"
+                alt="close up of flat white coffee being poured"
+              />
+            </div>
+          </div>
+          <div class="menuCard">
+            <h3>Pourover Latte</h3>
+            <p class="price">$6.00</p>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Provident enim nihil quidem voluptatibus nostrum commodi laborum
+              est!
+            </p>
+            <div class="menuImgAspectRatio">
+              <img
+                height="300"
+                width="400"
+                class="menuImg"
+                data-src="./images/menuPageMenu/pouroverLatte/pouroverLatte400.jpg"
+                data-srcset="
+                ./images/menuPageMenu/pouroverLatte/pouroverLatte400.webp 400w,
+                ./images/menuPageMenu/pouroverLatte/pouroverLatte500.webp 500w,
+                ./images/menuPageMenu/pouroverLatte/pouroverLatte600.webp 600w,
+                ./images/menuPageMenu/pouroverLatte/pouroverLatte700.webp 700w,
+                ./images/menuPageMenu/pouroverLatte/pouroverLatte800.webp 800w,
+                ./images/menuPageMenu/pouroverLatte/pouroverLatte1200.webp 1200w,
+                ./images/menuPageMenu/pouroverLatte/pouroverLatte1600.webp 1600w
+              "
+                sizes="(max-width: 700px) 89vw, (max-width: 1000px) 35vw, (max-width: 1400px) 25vw, 18.66vw"
+                alt="close up of flat white coffee being poured"
+              />
+            </div>
+          </div>
+          <div class="menuCard">
+            <h3>Cold Brew Latte</h3>
+            <p class="price">$6.00</p>
+            <p class="description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. At vel
+              inventore facilis natus! Necessitatibus consequuntur animi
+              provident velit expedita at nam, ab veniam.
+            </p>
+            <div class="menuImgAspectRatio">
+              <img
+                height="300"
+                width="400"
+                class="menuImg"
+                data-src="./images/menuPageMenu/coldBrewLatte/coldBrewLatte400.jpg"
+                data-srcset="
+                ./images/menuPageMenu/coldBrewLatte/coldBrewLatte400.webp 400w,
+                ./images/menuPageMenu/coldBrewLatte/coldBrewLatte500.webp 500w,
+                ./images/menuPageMenu/coldBrewLatte/coldBrewLatte600.webp 600w,
+                ./images/menuPageMenu/coldBrewLatte/coldBrewLatte700.webp 700w,
+                ./images/menuPageMenu/coldBrewLatte/coldBrewLatte800.webp 800w,
+                ./images/menuPageMenu/coldBrewLatte/coldBrewLatte1200.webp 1200w,
+                ./images/menuPageMenu/coldBrewLatte/coldBrewLatte1600.webp 1600w
+              "
+                sizes="(max-width: 700px) 89vw, (max-width: 1000px) 35vw, (max-width: 1400px) 25vw, 18.66vw"
+                alt="close up of flat white coffee being poured"
+              />
+            </div>
+          </div>
+          <div class="menuCard">
+            <h3>Cold Brew Black</h3>
+            <p class="price">$6.00</p>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Provident enim nihil quidem voluptatibus nostrum commodi laborum
+              est!
+            </p>
+            <div class="menuImgAspectRatio">
+              <img
+                height="300"
+                width="400"
+                class="menuImg"
+                data-src="./images/menuPageMenu/coldBrewBlack/coldBrewBlack400.jpg"
+                data-srcset="
+                ./images/menuPageMenu/coldBrewBlack/coldBrewBlack400.webp 400w,
+                ./images/menuPageMenu/coldBrewBlack/coldBrewBlack500.webp 500w,
+                ./images/menuPageMenu/coldBrewBlack/coldBrewBlack600.webp 600w,
+                ./images/menuPageMenu/coldBrewBlack/coldBrewBlack700.webp 700w,
+                ./images/menuPageMenu/coldBrewBlack/coldBrewBlack800.webp 800w,
+                ./images/menuPageMenu/coldBrewBlack/coldBrewBlack1200.webp 1200w,
+                ./images/menuPageMenu/coldBrewBlack/coldBrewBlack1600.webp 1600w
+              "
+                sizes="(max-width: 700px) 89vw, (max-width: 1000px) 35vw, (max-width: 1400px) 25vw, 18.66vw"
+                alt="close up of flat white coffee being poured"
+              />
+            </div>
+          </div>
+          <div class="menuCard">
+            <h3>Affogato</h3>
+            <p class="price">$6.00</p>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Provident enim nihil quidem voluptatibus nostrum commodi laborum
+              est!
+            </p>
+            <div class="menuImgAspectRatio">
+              <img
+                height="300"
+                width="400"
+                class="menuImg"
+                data-src="./images/menuPageMenu/affogato/affogato400.jpg"
+                data-srcset="
+                ./images/menuPageMenu/affogato/affogato400.webp 400w,
+                ./images/menuPageMenu/affogato/affogato500.webp 500w,
+                ./images/menuPageMenu/affogato/affogato600.webp 600w,
+                ./images/menuPageMenu/affogato/affogato700.webp 700w,
+                ./images/menuPageMenu/affogato/affogato800.webp 800w,
+                ./images/menuPageMenu/affogato/affogato1200.webp 1200w,
+                ./images/menuPageMenu/affogato/affogato1600.webp 1600w
+              "
+                sizes="(max-width: 700px) 89vw, (max-width: 1000px) 35vw, (max-width: 1400px) 25vw, 18.66vw"
+                alt="close up of flat white coffee being poured"
+              />
+            </div>
+          </div>
+          <div class="menuCard">
+            <h3>Frappe</h3>
+            <p class="price">$6.00</p>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Provident enim nihil quidem voluptatibus nostrum commodi laborum
+              est!
+            </p>
+            <div class="menuImgAspectRatio">
+              <img
+                height="300"
+                width="400"
+                class="menuImg"
+                data-src="./images/menuPageMenu/frappe/frappe400.jpg"
+                data-srcset="
+                ./images/menuPageMenu/frappe/frappe400.webp 400w,
+                ./images/menuPageMenu/frappe/frappe500.webp 500w,
+                ./images/menuPageMenu/frappe/frappe600.webp 600w,
+                ./images/menuPageMenu/frappe/frappe700.webp 700w,
+                ./images/menuPageMenu/frappe/frappe800.webp 800w,
+                ./images/menuPageMenu/frappe/frappe1200.webp 1200w,
+                ./images/menuPageMenu/frappe/frappe1600.webp 1600w
+              "
+                sizes="(max-width: 700px) 89vw, (max-width: 1000px) 35vw, (max-width: 1400px) 25vw, 18.66vw"
+                alt="close up of flat white coffee being poured"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <section id="loyalty">
+      <h2>LOYALTY SCHEME</h2>
+    </section> -->
+
+    <footer>
+      <div id="contactUs" class="footerMxw">
+        <section class="footerHalfWrapOne">
+          <h4 id="contact">Email us</h4>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="apikey"
+              value="5aaf5207-8334-4e8a-ae67-3bdd5394dbe5"
+            />
+
+            <input
+              type="hidden"
+              name="subject"
+              value="New Submission from Web3Forms"
+            />
+
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://web3forms.com/success"
+            />
+
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="hidden"
+              style="display: none"
+            />
+
+            <p class="contact-name contactInput">
+              <label>name</label>
+              <input
+                type="text"
+                name="First Name"
+                required
+                placeholder="your name"
+              />
+            </p>
+
+            <p class="contact-email contactInput">
+              <label>email</label>
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="your email"
+              />
+            </p>
+
+            <p class="contact-msg contactInput">
+              <label>message</label>
+              <textarea
+                name="message"
+                required
+                placeholder="your message"
+              ></textarea>
+            </p>
+
+            <p class="contact-submit">
+              <button class="submitButton" type="submit">Submit Form</button>
+            </p>
+          </form>
+          <section class="socMedLinks">
+            <img
+              height="516.3"
+              width="516.3"
+              class="socMedIcon"
+              src="./images/socMedIcons/facebookIcon.svg"
+              alt=""
+            />
+            <img
+              height="256"
+              width="256"
+              class="socMedIcon"
+              src="./images/socMedIcons/instagramIcon.svg"
+              alt=""
+            />
+            <img
+              height="56.7"
+              width="56.7"
+              class="socMedIcon"
+              src="./images/socMedIcons/twitterIcon.svg"
+              alt=""
+            />
+          </section>
+        </section>
+        <section class="footerHalfWrapTwo">
+          <div class="linksWrap">
+            <div class="linkList">
+              <p><strong>About Us</strong></p>
+              <a href="./about.html#ourStory">Our story</a>
+              <a href="./about.html#missionStatement">Mission statement</a>
+              <a href="./careers.html">Careers</a>
+              <a href="./menu.html#loyalty">Loyalty Scheme</a>
+            </div>
+            <div class="linkList">
+              <p><strong>Ethics</strong></p>
+              <a href="./ourCoffee.html#sustainability">Sustainability</a>
+              <a href="./ourCoffee.html#fairTrade">Fair trade</a>
+              <a href="./ourCoffee.html#codeOfConduct">Code of conduct</a>
+            </div>
+            <div class="linkList">
+              <p><strong>Help</strong></p>
+              <a href="./policyAndLegal.html#faqs">FAQs</a>
+              <a href="./contact.html#contactUs">Contact us</a>
+              <a href="./policyAndLegal.html#allergy">Allergy advice</a>
+              <a href="#">Find us</a>
+            </div>
+            <div class="linkList">
+              <p><strong>Policies</strong></p>
+              <a href="./policyAndLegal.html#terms">Ts & Cs</a>
+              <a href="./policyAndLegal.html#privacy">Privacy policy</a>
+              <a href="./policyAndLegal.html#cookiePolicy">Cookie policy</a>
+              <button class="footerCookiePrefs">Cookie preferences</button>
+            </div>
+          </div>
+          <p class="copyright">
+            Copyright Barista Coffee, 2022, all rights reserved.
+          </p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

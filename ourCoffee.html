@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      @font-face {
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url("./fonts/PlayfairDisplay-Black.ttf") format("truetype");
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Playfair Display", serif;
+        font-weight: 900;
+      }
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <script defer src="observer.js"></script>
+    <title>Our Coffee</title>
+  </head>
+  <body id="ourCoffeePage">
+    <header>
+      <p class="navLogo">Barista</p>
+      <nav class="mainNav">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./ourCoffee.html">Our Coffee</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./careers.html">Careers</a></li>
+          <li><a id="contactBtn" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="burger">
+        <div class="burgerBar burgerTop"></div>
+        <div class="burgerBar burgerMid"></div>
+        <div class="burgerBar burgerBottom"></div>
+      </div>
+    </header>
+
+    <main class="pageLayout">
+      <section class="ourCoffeePageHero sectionLayout">
+
+        <div class="heroTextBtnWrap">
+          <h2 class="hxFontSize">Our Coffee</h2>
+          <p class="pFontSize">Superior beans, ethically sourced.</p>
+          <a class="infoBtn infoBtnSix" href="./policyAndLegal.html">FAIR TRADE</a>
+        </div>
+        <img
+        height="533" 
+        width="800"
+        class="heroImg"
+        src="./images/ourCoffeeHero/coffee-1548771800.jpg"
+        srcset="
+          ./images/ourCoffeeHero/coffee-1548771800.webp   800w,
+          ./images/ourCoffeeHero/coffee-15487711200.webp 1200w,
+          ./images/ourCoffeeHero/coffee-15487711600.webp 1600w,
+          ./images/ourCoffeeHero/coffee-15487712000.webp 2000w
+        "
+
+        sizes="(max-width: 768px) 100vw, 50vw"
+        alt="close up of flat white coffee being poured"
+      />
+      </section>
+
+      <section class="tagline tagFour">
+        <h3 class="tagFontSize">
+          We believe in quality beans, quality coffee.
+        </h3>
+      </section>
+
+      <section class="ourCoffeePageQuality" id="ourCoffeeQuality">
+          <div class="twoUpGrid">
+            <div class="twoUpGridTextWrap textLeft">
+              <h2 class="hxFontSizeMd" >Premium quality produce</h2>
+              <p class="pFontSize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugiat alias quos perspiciatis, iusto facilis aut laudantium suscipit repellendus adipisci sunt quasi recusandae, dolorem ut officia libero modi ex blanditiis nostrum sint? Facere itaque hic provident dolorem porro nam id deleniti. Culpa dicta exercitationem impedit, hic repellendus pariatur quisquam aliquam sed esse voluptatibus cumque ut!</p>
+              <p class="pFontSize">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit laboriosam voluptatem pariatur. Recusandae quo nemo sit harum a ab, sunt eius? Repudiandae distinctio consectetur et velit doloremque facilis, eos amet rerum eum nostrum accusamus sint eaque voluptate voluptates veniam suscipit nobis iusto blanditiis!</p>
+            </div>
+            <div class="img-wrap img-wrap-three">
+              <img
+              height="531" 
+              width="800"
+              class="borderImg"
+              data-src="./images/ourCoffeeQuality/ourCoffeeQualityOne800.jpg"
+              data-srcset="
+                ./images/ourCoffeeQuality/ourCoffeeQualityOne800.webp   800w,
+                ./images/ourCoffeeQuality/ourCoffeeQualityOne1200.webp 1200w,
+                ./images/ourCoffeeQuality/ourCoffeeQualityOne1600.webp 1600w,
+                ./images/ourCoffeeQuality/ourCoffeeQualityOne2000.webp 2000w
+              "
+
+              sizes="(max-width: 768px) 100vw, 50vw"
+              alt="close up of flat white coffee being poured"
+            />
+            </div>
+          <div class="twoUpGridTextWrap textLeft">
+            <p class="pFontSize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ratione, tempora libero numquam atque nulla sed cum eaque, quam, placeat ipsum adipisci. Esse, quisquam obcaecati quod id, laborum, dolore veniam officiis reprehenderit maxime magnam sequi.</p>
+            <p class="pFontSize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cum odit consectetur maiores blanditiis mollitia aspernatur facere quia enim, asperiores, corporis magni doloribus possimus pariatur molestias corrupti incidunt quas ex vitae voluptatem expedita fugit nulla dolor dignissimos? Blanditiis aspernatur perspiciatis itaque omnis natus suscipit exercitationem dolores consectetur laudantium corporis dolor consequuntur, illo at, sapiente, sequi sit sed repellendus totam voluptates tempore? Vel, quas.</p>
+          </div>
+          <div class="img-wrap img-wrap-four">
+            <img
+            height="532" 
+            width="800"
+            class="borderImg"
+            data-src="./images/ourCoffeeQuality/ourCoffeeQualityTwo800.jpg"
+            data-srcset="
+              ./images/ourCoffeeQuality/ourCoffeeQualityTwo800.webp   800w,
+              ./images/ourCoffeeQuality/ourCoffeeQualityTwo1200.webp 1200w,
+              ./images/ourCoffeeQuality/ourCoffeeQualityTwo1600.webp 1600w,
+              ./images/ourCoffeeQuality/ourCoffeeQualityTwo2000.webp 2000w
+            "
+
+            sizes="(max-width: 768px) 100vw, 50vw"
+            alt="close up of flat white coffee being poured"
+          />
+          </div>
+          </div>
+      </section>
+
+      <section class="tagline tagFive">
+        <h3 class="tagFontSize">
+          We believe in fair trade.
+        </h3>
+      </section>
+
+      <section class="ourCoffeePageFairTrade" id="fairTrade">
+        <div class="twoUpGrid">
+          <div class="twoUpGridTextWrap textLeft">
+            <h2 class="hxFontSizeMd" >A fair deal for growers...</h2>
+            <p class="pFontSize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugiat alias quos perspiciatis, iusto facilis aut laudantium suscipit repellendus adipisci sunt quasi recusandae, dolorem ut officia libero modi ex blanditiis nostrum sint? Facere itaque hic provident dolorem porro nam id deleniti. Culpa dicta exercitationem impedit, hic repellendus pariatur quisquam aliquam sed esse voluptatibus cumque ut!</p>
+            <p class="pFontSize">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit laboriosam voluptatem pariatur. Recusandae quo nemo sit harum a ab, sunt eius? Repudiandae distinctio consectetur et velit doloremque facilis, eos amet rerum eum nostrum accusamus sint eaque voluptate voluptates veniam suscipit nobis iusto blanditiis!</p>
+          </div>
+          <div class="img-wrap img-wrap-five">
+            <img
+            height="534" 
+            width="800"
+            class="borderImg"
+            data-src="./images/ourCoffeeFairTrade/ourCoffeeFairTradeOne800.jpg"
+            data-srcset="
+              ./images/ourCoffeeFairTrade/ourCoffeeFairTradeOne800.webp   800w,
+              ./images/ourCoffeeFairTrade/ourCoffeeFairTradeOne1200.webp 1200w,
+              ./images/ourCoffeeFairTrade/ourCoffeeFairTradeOne1600.webp 1600w,
+              ./images/ourCoffeeFairTrade/ourCoffeeFairTradeOne2000.webp 2000w
+            "
+
+            sizes="(max-width: 768px) 100vw, 50vw"
+            alt="close up of flat white coffee being poured"
+          />
+          </div>
+
+        <div class="twoUpGridTextWrap textLeft">
+          <p class="pFontSize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ratione, tempora libero numquam atque nulla sed cum eaque, quam, placeat ipsum adipisci. Esse, quisquam obcaecati quod id, laborum, dolore veniam officiis reprehenderit maxime magnam sequi.</p>
+          <p class="pFontSize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cum odit consectetur maiores blanditiis mollitia aspernatur facere quia enim, asperiores, corporis magni doloribus possimus pariatur molestias corrupti incidunt quas ex vitae voluptatem expedita fugit nulla dolor dignissimos? Blanditiis aspernatur perspiciatis itaque omnis natus suscipit exercitationem dolores consectetur laudantium corporis dolor consequuntur, illo at, sapiente, sequi sit sed repellendus totam voluptates tempore? Vel, quas.</p>
+        </div>
+        <div class="img-wrap img-wrap-six">
+          <img
+          height="533" 
+          width="800"
+          class="borderImg"
+          data-src="./images/ourCoffeeFairTrade/ourCoffeeFairTradeTwo800.jpg"
+          data-srcset="
+            ./images/ourCoffeeFairTrade/ourCoffeeFairTradeTwo800.webp   800w,
+            ./images/ourCoffeeFairTrade/ourCoffeeFairTradeTwo1200.webp 1200w,
+            ./images/ourCoffeeFairTrade/ourCoffeeFairTradeTwo1600.webp 1600w,
+            ./images/ourCoffeeFairTrade/ourCoffeeFairTradeTwo2000.webp 2000w
+          "
+
+          sizes="(max-width: 768px) 100vw, 50vw"
+          alt="close up of flat white coffee being poured"
+        />
+        </div>
+        </div>
+    </section>
+
+    <section class="fullWidth">
+      <aside class="fairTradeLink">
+        <img src="./images/ourCoffeeFairTrade/fairtradeLogo.png" alt="fairtrade logo">
+        <p>Fairtrade is a system of certification that aims to ensure a set of standards are met in the production and supply of a product or ingredient. For farmers and workers, Fairtrade means workers’ rights, safer working conditions and fairer pay. For shoppers it means high quality, ethically produced products.</p>
+        <a class="infoBtn infoBtnOne" href="https://www.fairtrade.org.uk/what-is-fairtrade/">What is Fairtrade?</a>
+        <a class="infoBtn infoBtnSix" href="https://www.fairtrade.org.uk/what-is-fairtrade/">LEARN MORE</a>
+      </aside>
+    </section>
+
+
+      <section class="tagline tagSix">
+        <h3 class="tagFontSize">
+          We believe in sustainability.
+        </h3>
+      </section>
+
+      <section class="ourCoffeePageSustainability" id="sustainability">
+        <div class="twoUpGrid">
+          <div class="twoUpGridTextWrap textLeft">
+            <h2 class="hxFontSizeMd" >Sustainable farming methods</h2>
+            <p class="pFontSize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugiat alias quos perspiciatis, iusto facilis aut laudantium suscipit repellendus adipisci sunt quasi recusandae, dolorem ut officia libero modi ex blanditiis nostrum sint? Facere itaque hic provident dolorem porro nam id deleniti.</p>
+            <p class="pFontSize">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit laboriosam voluptatem pariatur. Recusandae quo nemo sit harum a ab, sunt eius? Repudiandae distinctio consectetur et velit doloremque facilis, eos amet rerum eum nostrum accusamus sint eaque voluptate voluptates veniam suscipit nobis iusto blanditiis!</p>
+          </div>
+          <img
+          height="534" 
+          width="800"
+          class="borderImg"
+          data-src="./images/ourCoffeeSustainability/ourCoffeeSustainabilityOne800.jpg"
+          
+          data-srcset="
+            ./images/ourCoffeeSustainability/ourCoffeeSustainabilityOne800.webp   800w,
+            ./images/ourCoffeeSustainability/ourCoffeeSustainabilityOne1200.webp 1200w,
+            ./images/ourCoffeeSustainability/ourCoffeeSustainabilityOne1600.webp 1600w,
+            ./images/ourCoffeeSustainability/ourCoffeeSustainabilityOne2000.webp 2000w
+          "
+
+          sizes="(max-width: 768px) 100vw, 50vw"
+          alt="close up of flat white coffee being poured"
+        />
+
+        <div class="twoUpGridTextWrap textLeft">
+          <p class="pFontSize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ratione, tempora libero numquam atque nulla sed cum eaque, quam, placeat ipsum adipisci. Esse, quisquam obcaecati quod id, laborum, dolore veniam officiis reprehenderit maxime magnam sequi. Placeat ipsum adipisci. Esse, quisquam obcaecati quod id, laborum, dolore veniam officiis reprehenderit maxime magnam sequi.</p>
+          <p class="pFontSize">Lorem ipsum dolor sit amet consectetur adipisicing elit corporis magni doloribus possimus pariatur molestias corrupti incidunt quas ex vitae voluptatem expedita fugit nulla dolor dignissimos? Blanditiis aspernatur perspiciatis itaque omnis natus suscipit exercitationem dolores consectetur laudantium corporis dolor consequuntur, illo at, sapiente, sequi sit sed repellendus totam voluptates tempore? Vel, quas.</p>
+        </div>
+        <img
+        height="533" 
+        width="800"
+        class="borderImg"
+        data-src="./images/ourCoffeeSustainability/ourCoffeeSustainabilityTwo800.jpg"
+        data-srcset="
+          ./images/ourCoffeeSustainability/ourCoffeeSustainabilityTwo800.webp   800w,
+          ./images/ourCoffeeSustainability/ourCoffeeSustainabilityTwo1200.webp 1200w,
+          ./images/ourCoffeeSustainability/ourCoffeeSustainabilityTwo1600.webp 1600w,
+          ./images/ourCoffeeSustainability/ourCoffeeSustainabilityTwo2000.webp 2000w
+        "
+
+        sizes="(max-width: 768px) 100vw, 50vw"
+        alt="close up of flat white coffee being poured"
+      />
+        </div>
+    </section>
+    </main>
+
+    <section id="codeOfConduct">
+      <h2>CODE OF CONDUCT</h2>
+    </section>
+
+
+    <footer>
+      <div id="contactUs" class="footerMxw">
+        <section class="footerHalfWrapOne">
+          <h4 id="contact">Email us</h4>
+          <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="apikey"
+                value="5aaf5207-8334-4e8a-ae67-3bdd5394dbe5"
+              />
+
+              <input
+                type="hidden"
+                name="subject"
+                value="New Submission from Web3Forms"
+              />
+
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://web3forms.com/success"
+              />
+
+              <input
+                type="checkbox"
+                name="botcheck"
+                class="hidden"
+                style="display: none"
+              />
+
+
+            <p class="contact-name contactInput">
+              <label>name</label>
+              <input type="text" name="First Name" required placeholder="your name" />
+            </p>
+
+            <p class="contact-email contactInput">
+              <label>email</label>
+              <input type="email" name="email" required placeholder="your email" />
+            </p>
+
+            <p class="contact-msg contactInput">
+              <label>message</label>
+              <textarea name="message" required placeholder="your message"></textarea>
+            </p>
+
+            <p class="contact-submit">
+              <button class="submitButton" type="submit">Submit Form</button>
+            </p>
+          </form>
+          <section class="socMedLinks">
+            <img
+              height="516.3"
+              width="516.3"
+              class="socMedIcon"
+              src="./images/socMedIcons/facebookIcon.svg"
+              alt=""
+            />
+            <img
+              height="256"
+              width="256"
+              class="socMedIcon"
+              src="./images/socMedIcons/instagramIcon.svg"
+              alt=""
+            />
+            <img
+              height="56.7"
+              width="56.7"
+              class="socMedIcon"
+              src="./images/socMedIcons/twitterIcon.svg"
+              alt=""
+            />
+          </section>
+        </section>
+        <section class="footerHalfWrapTwo">
+          <div class="linksWrap">
+            <div class="linkList">
+              <p><strong>About Us</strong></p>
+              <a href="./about.html#ourStory">Our story</a>
+              <a href="./about.html#missionStatement">Mission statement</a>
+              <a href="./careers.html">Careers</a>
+              <a href="./menu.html#loyalty">Loyalty Scheme</a>
+            </div>
+            <div class="linkList">
+              <p><strong>Ethics</strong></p>
+              <a href="./ourCoffee.html#sustainability">Sustainability</a>
+              <a href="./ourCoffee.html#fairTrade">Fair trade</a>
+              <a href="./ourCoffee.html#codeOfConduct">Code of conduct</a>
+            </div>
+            <div class="linkList">
+              <p><strong>Help</strong></p>
+              <a href="./policyAndLegal.html#faqs">FAQs</a>
+              <a href="./contact.html#contactUs">Contact us</a>
+              <a href="./policyAndLegal.html#allergy">Allergy advice</a>
+              <a href="#">Find us</a>
+            </div>
+            <div class="linkList">
+              <p><strong>Policies</strong></p>
+              <a href="./policyAndLegal.html#terms">Ts & Cs</a>
+              <a href="./policyAndLegal.html#privacy">Privacy policy</a>
+              <a href="./policyAndLegal.html#cookiePolicy">Cookie policy</a>
+              <button class="footerCookiePrefs" >Cookie preferences</button>
+            </div>
+          </div>
+          <p class="copyright">Copyright Barista Coffee, 2022, all rights reserved.</p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      @font-face {
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url("./fonts/PlayfairDisplay-Black.ttf") format("truetype");
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Playfair Display", serif;
+      }
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <script defer src="observer.js"></script>
+    <script defer src="testimonialSlider.js"></script>
+    <title>About</title>
+  </head>
+  <body id="aboutPage">
+    <header>
+      <p class="navLogo">Barista</p>
+      <nav class="mainNav">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./ourCoffee.html">Our Coffee</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./careers.html">Careers</a></li>
+          <li><a id="contactBtn" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="burger">
+        <div class="burgerBar burgerTop"></div>
+        <div class="burgerBar burgerMid"></div>
+        <div class="burgerBar burgerBottom"></div>
+      </div>
+    </header>
+
+    <main class="pageLayout">
+      <section class="aboutPageHero sectionLayout sectionRowReverse">
+        <div class="heroTextBtnWrap">
+          <h2 class="hxFontSize">About <span>Barista</span> Coffee</h2>
+          <p class="pFontSize">Who we are, why we love coffee...</p>
+          <!-- <a class="infoBtn infoBtnFour" href="./ourCoffee.html">LEARN MORE</a> -->
+        </div>
+        <img
+          height="752"
+          width="800"
+          class="heroImg"
+          src="./images/aboutBarista/AboutBarista800.jpg"
+          srcset="
+            ./images/aboutBarista/AboutBarista800.webp   800w,
+            ./images/aboutBarista/AboutBarista1200.webp 1200w,
+            ./images/aboutBarista/AboutBarista1600.webp 1600w,
+            ./images/aboutBarista/AboutBarista2000.webp 2000w
+          "
+
+          sizes="(max-width: 768px) 100vw, 50vw"
+          alt="close up of flat white coffee being poured"
+        />
+      </section>
+
+      <section id="missionStatement" class="tagline tagThree">
+        <h3 class="tagFontSize">Our Mission...</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde debitis
+          maxime magni totam dolorem iusto perspiciatis, nemo animi repudiandae
+          adipisci asperiores possimus esse in eius modi itaque.
+        </p>
+      </section>
+
+      <section class="aboutPageOurStory" id="ourStory">
+        <div class="twoUpGrid">
+          <div class="twoUpGridTextWrap">
+            <h2 class="hxFontSizeMd">Our Story</h2>
+            <p class="pFontSize">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem fugiat alias quos perspiciatis, iusto facilis aut
+              laudantium suscipit repellendus adipisci sunt quasi recusandae,
+              dolorem ut officia libero modi ex blanditiis nostrum sint? Facere
+              itaque hic provident dolorem porro nam id deleniti. Culpa dicta
+              exercitationem impedit, hic repellendus pariatur quisquam aliquam
+              sed esse voluptatibus cumque ut!
+            </p>
+            <p class="pFontSize">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              laboriosam voluptatem pariatur. Recusandae quo nemo sit harum a
+              ab, sunt eius? Repudiandae distinctio consectetur et velit
+              doloremque facilis, eos amet rerum eum nostrum accusamus sint
+              eaque voluptate voluptates veniam suscipit nobis iusto blanditiis!
+            </p>
+          </div>
+          <div class="img-wrap img-wrap-one">
+            <img
+            height="533" 
+            width="800"
+              class="borderImg"
+              data-src="./images/aboutOurStory/ourStoryOne800.jpg"
+              data-srcset="
+                ./images/aboutOurStory/ourStoryOne800.webp   800w,
+                ./images/aboutOurStory/ourStoryOne1200.webp 1200w,
+                ./images/aboutOurStory/ourStoryOne1600.webp 1600w,
+                ./images/aboutOurStory/ourStoryOne2000.webp 2000w
+              "
+
+              sizes="(max-width: 768px) 100vw, 50vw"
+              alt="close up of flat white coffee being poured"
+            />
+          </div>
+
+          <div class="twoUpGridTextWrap">
+            <p class="pFontSize">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates ratione, tempora libero numquam atque nulla sed cum
+              eaque, quam, placeat ipsum adipisci. Esse, quisquam obcaecati quod
+              id, laborum, dolore veniam officiis reprehenderit maxime magnam
+              sequi.
+            </p>
+            <p class="pFontSize">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cum
+              odit consectetur maiores blanditiis mollitia aspernatur facere
+              quia enim, asperiores, corporis magni doloribus possimus pariatur
+              molestias corrupti incidunt quas ex vitae voluptatem expedita
+              fugit nulla dolor dignissimos? Blanditiis aspernatur perspiciatis
+              itaque omnis natus suscipit exercitationem dolores consectetur
+              laudantium corporis dolor consequuntur, illo at, sapiente, sequi
+              sit sed repellendus totam voluptates tempore? Vel, quas.
+            </p>
+          </div>
+          <div class="img-wrap img-wrap-two">
+            <img
+            height="533" 
+            width="800"
+              class="borderImg"
+              data-src="./images/aboutOurStory/ourStoryTwo800.jpg"
+              data-srcset="
+                ./images/aboutOurStory/ourStoryTwo800.webp   800w,
+                ./images/aboutOurStory/ourStoryTwo1200.webp 1200w,
+                ./images/aboutOurStory/ourStoryTwo1600.webp 1600w,
+                ./images/aboutOurStory/ourStoryTwo2000.webp 2000w
+              "
+
+              sizes="(max-width: 768px) 100vw, 50vw"
+              alt="close up of flat white coffee being poured"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="missionStatement" class="tagline tagThree">
+        <h3 class="tagFontSize">What people are saying about us...</h3>
+        <!-- <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde debitis
+          maxime magni totam dolorem iusto perspiciatis, nemo animi repudiandae
+          adipisci asperiores possimus esse in eius modi itaque.
+        </p> -->
+      </section>
+
+      <article class="t-carousel">
+        <section class="t-carousel-frame">
+          <div class="t-carousel-slider">
+            <figure class="t-card">
+              <blockquote>
+                Comprehensive set of startup tools for all imaginable
+                entrepreneurial needs. Create landing pages, send emails, find
+                freelancers. Perfect for sales, marketing, and support.
+              </blockquote>
+              <p>
+                <strong>Viella Malkovich</strong> - Creative Director at Johnson
+              </p>
+            </figure>
+
+            <figure class="t-card">
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              </blockquote>
+              <p><strong>Darth Vader</strong> - Arch Villain at Empire</p>
+            </figure>
+
+            <figure class="t-card">
+              <blockquote>
+                Generate Lorem Ipsum placeholder text. Select the number of
+                characters, words, sentences or paragraphs, and hit generate!
+              </blockquote>
+              <p><strong>Lorem Ipsum</strong> - Person at Ancient Rome</p>
+            </figure>
+
+            <figure class="t-card">
+              <blockquote>
+                Fear is the path to the dark side. Fear leads to anger. Anger
+                leads to hate. Hate leads to suffering.
+              </blockquote>
+              <p><strong>Yoda</strong> - Jedi Master at Dagoba</p>
+            </figure>
+          </div>
+          <div class="progress-bar"></div>
+        </section>
+      </article>
+
+      <aside class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d742.6576479036513!2d-0.20664433542945743!3d51.23763088342032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875e5ad9fafc195%3A0xfa0d80f17740b688!2sCosta%20Coffee!5e0!3m2!1sen!2suk!4v1660316362668!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </aside>
+    </main>
+
+    <footer>
+      <div id="contactUs" class="footerMxw">
+        <section class="footerHalfWrapOne">
+          <h4 id="contact">Email us</h4>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="apikey"
+              value="5aaf5207-8334-4e8a-ae67-3bdd5394dbe5"
+            />
+
+            <input
+              type="hidden"
+              name="subject"
+              value="New Submission from Web3Forms"
+            />
+
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://web3forms.com/success"
+            />
+
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="hidden"
+              style="display: none"
+            />
+
+            <p class="contact-name contactInput">
+              <label>name</label>
+              <input
+                type="text"
+                name="First Name"
+                required
+                placeholder="your name"
+              />
+            </p>
+
+            <p class="contact-email contactInput">
+              <label>email</label>
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="your email"
+              />
+            </p>
+
+            <p class="contact-msg contactInput">
+              <label>message</label>
+              <textarea
+                name="message"
+                required
+                placeholder="your message"
+              ></textarea>
+            </p>
+
+            <p class="contact-submit">
+              <button class="submitButton" type="submit">Submit Form</button>
+            </p>
+          </form>
+          <section class="socMedLinks">
+            <img
+              height="516.3"
+              width="516.3"
+              class="socMedIcon"
+              src="./images/socMedIcons/facebookIcon.svg"
+              alt=""
+            />
+            <img
+              height="256"
+              width="256"
+              class="socMedIcon"
+              src="./images/socMedIcons/instagramIcon.svg"
+              alt=""
+            />
+            <img
+              height="56.7"
+              width="56.7"
+              class="socMedIcon"
+              src="./images/socMedIcons/twitterIcon.svg"
+              alt=""
+            />
+          </section>
+        </section>
+        <section class="footerHalfWrapTwo">
+          <div class="linksWrap">
+            <div class="linkList">
+              <p><strong>About Us</strong></p>
+              <a href="./about.html#ourStory">Our story</a>
+              <a href="./about.html#missionStatement">Mission statement</a>
+              <a href="./careers.html">Careers</a>
+              <a href="./menu.html#loyalty">Loyalty Scheme</a>
+            </div>
+            <div class="linkList">
+              <p><strong>Ethics</strong></p>
+              <a href="./ourCoffee.html#sustainability">Sustainability</a>
+              <a href="./ourCoffee.html#fairTrade">Fair trade</a>
+              <a href="./ourCoffee.html#codeOfConduct">Code of conduct</a>
+            </div>
+            <div class="linkList">
+              <p><strong>Help</strong></p>
+              <a href="./policyAndLegal.html#faqs">FAQs</a>
+              <a href="./contact.html#contactUs">Contact us</a>
+              <a href="./policyAndLegal.html#allergy">Allergy advice</a>
+              <a href="#">Find us</a>
+            </div>
+            <div class="linkList">
+              <p><strong>Policies</strong></p>
+              <a href="./policyAndLegal.html#terms">Ts & Cs</a>
+              <a href="./policyAndLegal.html#privacy">Privacy policy</a>
+              <a href="./policyAndLegal.html#cookiePolicy">Cookie policy</a>
+              <button class="footerCookiePrefs">Cookie preferences</button>
+            </div>
+          </div>
+          <p class="copyright">
+            Copyright Barista Coffee, 2022, all rights reserved.
+          </p>
+        </section>
+      </div>
+    </footer>
+
+    <!-- <section id="cookieConsent">
+      <dialog class="modal" id="modal">
+        <h2>Cookie Preferences</h2>
+        <p>this website uses cookies</p>
+        <button class="button accept">click to accept</button>
+        <button class="button reject">click to reject</button>
+      </dialog>
+    </section> -->
+  </body>
+</html>

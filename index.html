@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      @font-face {
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url("./fonts/playfair-display-v30-latin-800.woff2") format("woff2");
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Playfair Display", serif;
+      }
+    </style>
+
+    <link
+      rel="preload"
+      href="./fonts/playfair-display-v30-latin-800.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <script defer src="observer.js"></script>
+    <title>Document</title>
+  </head>
+  <body id="homePage">
+    <header>
+      <p class="navLogo">Barista</p>
+      <nav class="mainNav">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./ourCoffee.html">Our Coffee</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./careers.html">Careers</a></li>
+          <li><a id="contactBtn" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="burger">
+        <div class="burgerBar burgerTop"></div>
+        <div class="burgerBar burgerMid"></div>
+        <div class="burgerBar burgerBottom"></div>
+      </div>
+    </header>
+
+    <main class="pageLayout">
+      <section class="homePageHero sectionLayout">
+        <div class="heroTextBtnWrap">
+          <h1 class="hxFontSize">
+            Welcome to <br /><span>Barista</span> Coffee
+          </h1>
+          <p class="pFontSize pMxw">
+            Artisanal coffee, brewed with love by experts in Reigate. Come enjoy
+            a superior taste in a relaxing atmophere.
+          </p>
+          <div class="btnWrap">
+            <a class="infoBtn infoBtnFive" href="./menu.html">BROWSE COFFEE</a>
+            <a class="infoBtn infoBtnTwo" href="./contact.html">GET IN TOUCH</a>
+          </div>
+        </div>
+        <img
+          class="heroImg"
+          height="882"
+          width="800"
+          src="./images/homeHero/coffeeShop12800.jpg"
+          srcset="
+            ./images/homeHero/coffeeShop122000800.webp   800w,
+            ./images/homeHero/coffeeShop1220001200.webp 1200w,
+            ./images/homeHero/coffeeShop1220001600.webp 1600w,
+            ./images/homeHero/coffeeShop1220002000.webp 2000w
+          "
+          sizes="(max-width: 768px) 100vw, 50vw"
+          alt="close up of flat white coffee being poured"
+        />
+      </section>
+
+      <section class="tagline tagOne">
+        <h3 class="tagFontSize">
+          Coffee is our passion, our BARISTAS strive to deliver your perfect
+          cup.
+        </h3>
+      </section>
+
+      <section class="homePageAbout sectionLayout">
+        <img
+          height="560"
+          width="800"
+          class="heroImg"
+          src="./images/homePageAbout/coffeeHomePageAbout800.jpg"
+          srcset="
+            ./images/homePageAbout/coffeeHomePageAbout800.webp   800w,
+            ./images/homePageAbout/coffeeHomePageAbout1200.webp 1200w,
+            ./images/homePageAbout/coffeeHomePageAbout1600.webp 1600w,
+            ./images/homePageAbout/coffeeHomePageAbout2000.webp 2000w
+          "
+          sizes="(max-width: 768px) 100vw, 50vw"
+          alt="close up of flat white coffee being poured"
+        />
+        <div class="heroTextBtnWrap">
+          <h2 class="hxFontSize">About Us</h2>
+          <p class="pFontSize pMxw">Who we are, why we love coffee...</p>
+          <a class="infoBtn infoBtnOne" href="./about.html">LEARN MORE</a>
+        </div>
+      </section>
+
+      <section class="homePageOurCoffee sectionLayout sectionRowReverse">
+        <img
+          height="533"
+          width="800"
+          class="heroImg"
+          data-src="./images/homePageOurCoffee/homePageOurCoffee800.jpg"
+          data-srcset="
+            ./images/homePageOurCoffee/homePageOurCoffee800.webp   800w,
+            ./images/homePageOurCoffee/homePageOurCoffee1200.webp 1200w,
+            ./images/homePageOurCoffee/homePageOurCoffee1600.webp 1600w,
+            ./images/homePageOurCoffee/homePageOurCoffee2000.webp 2000w
+          "
+          sizes="(max-width: 768px) 100vw, 50vw"
+          alt="close up of flat white coffee being poured"
+        />
+        <div class="heroTextBtnWrap">
+          <h2 class="hxFontSize">Our Coffee</h2>
+          <p class="pFontSize pMxw">Superior beans, ethically sourced.</p>
+          <a class="infoBtn infoBtnFour" href="./ourCoffee.html">LEARN MORE</a>
+        </div>
+      </section>
+
+      <section class="homePageOurMenu sectionLayout">
+        <img
+          height="533"
+          width="800"
+          class="heroImg"
+          data-src="./images/homePageMenu/ourMenu800.jpg"
+          data-srcset="
+            ./images/homePageMenu/ourMenu800.webp   800w,
+            ./images/homePageMenu/ourMenu1200.webp 1200w,
+            ./images/homePageMenu/ourMenu1600.webp 1600w,
+            ./images/homePageMenu/ourMenu2000.webp  200w
+          "
+          sizes="(max-width: 768px) 100vw, 50vw"
+          alt="close up of flat white coffee being poured"
+        />
+        <div class="heroTextBtnWrap">
+          <h2 class="hxFontSize">Our Menu</h2>
+          <p class="pFontSize pMxw">Peruse our range of fantastic coffee.</p>
+          <a class="infoBtn infoBtnTwo" href="./menu.html">LEARN MORE</a>
+        </div>
+      </section>
+
+      <section class="homePageCareers sectionLayout sectionRowReverse">
+        <img
+          height="533"
+          width="800"
+          class="heroImg"
+          data-src="./images/homePageCareers/careers800.jpg"
+          data-srcset="
+            ./images/homePageCareers/careers800.webp   800w,
+            ./images/homePageCareers/careers1200.webp 1200w,
+            ./images/homePageCareers/careers1600.webp 1600w,
+            ./images/homePageCareers/careers2000.webp 2000w
+          "
+          sizes="(max-width: 768px) 100vw, 50vw"
+          alt="close up of flat white coffee being poured"
+        />
+        <div class="heroTextBtnWrap">
+          <h2 class="hxFontSize">Careers</h2>
+          <p class="pFontSize pMxw">
+            Love coffee as much as we do? Come and work with us!
+          </p>
+          <a class="infoBtn infoBtnOne" href="./careers.html">LEARN MORE</a>
+        </div>
+      </section>
+
+      <section class="tagline tagTwo">
+        <h3 class="tagFontSize">Life's too short for bad coffee...</h3>
+      </section>
+    </main>
+    <footer>
+      <div id="contactUs" class="footerMxw">
+        <section class="footerHalfWrapOne">
+          <h4 id="contact">Email us</h4>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="apikey"
+              value="5aaf5207-8334-4e8a-ae67-3bdd5394dbe5"
+            />
+
+            <input
+              type="hidden"
+              name="subject"
+              value="New Submission from Web3Forms"
+            />
+
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://web3forms.com/success"
+            />
+
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="hidden"
+              style="display: none"
+            />
+
+            <p class="contact-name contactInput">
+              <label>name</label>
+              <input
+                type="text"
+                name="First Name"
+                required
+                placeholder="your name"
+              />
+            </p>
+
+            <p class="contact-email contactInput">
+              <label>email</label>
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="your email"
+              />
+            </p>
+
+            <p class="contact-msg contactInput">
+              <label>message</label>
+              <textarea
+                name="message"
+                required
+                placeholder="your message"
+              ></textarea>
+            </p>
+
+            <p class="contact-submit">
+              <button class="submitButton" type="submit">Submit Form</button>
+            </p>
+          </form>
+          <section class="socMedLinks">
+            <img
+              height="516.3"
+              width="516.3"
+              class="socMedIcon"
+              src="./images/socMedIcons/facebookIcon.svg"
+              alt=""
+            />
+            <img
+              height="256"
+              width="256"
+              class="socMedIcon"
+              src="./images/socMedIcons/instagramIcon.svg"
+              alt=""
+            />
+            <img
+              height="56.7"
+              width="56.7"
+              class="socMedIcon"
+              src="./images/socMedIcons/twitterIcon.svg"
+              alt=""
+            />
+          </section>
+        </section>
+        <section class="footerHalfWrapTwo">
+          <div class="linksWrap">
+            <div class="linkList">
+              <p><strong>About Us</strong></p>
+              <a href="./about.html#ourStory">Our story</a>
+              <a href="./about.html#missionStatement">Mission statement</a>
+              <a href="./careers.html">Careers</a>
+              <a href="./menu.html#loyalty">Loyalty Scheme</a>
+            </div>
+            <div class="linkList">
+              <p><strong>Ethics</strong></p>
+              <a href="./ourCoffee.html#sustainability">Sustainability</a>
+              <a href="./ourCoffee.html#fairTrade">Fair trade</a>
+              <a href="./ourCoffee.html#codeOfConduct">Code of conduct</a>
+            </div>
+            <div class="linkList">
+              <p><strong>Help</strong></p>
+              <a href="./policyAndLegal.html#faqs">FAQs</a>
+              <a href="./contact.html#contactUs">Contact us</a>
+              <a href="./policyAndLegal.html#allergy">Allergy advice</a>
+              <a href="#">Find us</a>
+            </div>
+            <div class="linkList">
+              <p><strong>Policies</strong></p>
+              <a href="./policyAndLegal.html#terms">Ts & Cs</a>
+              <a href="./policyAndLegal.html#privacy">Privacy policy</a>
+              <a href="./policyAndLegal.html#cookiePolicy">Cookie policy</a>
+              <button class="footerCookiePrefs">Cookie preferences</button>
+            </div>
+          </div>
+          <p class="copyright">
+            Copyright Barista Coffee, 2022, all rights reserved.
+          </p>
+        </section>
+      </div>
+    </footer>
+    <section id="cookieConsent">
+      <dialog class="modal" id="modal">
+        <h2>Cookie Preferences</h2>
+        <p>this website uses cookies</p>
+        <button class="button accept">click to accept</button>
+        <button class="button reject">click to reject</button>
+      </dialog>
+    </section>
+  </body>
+</html>
