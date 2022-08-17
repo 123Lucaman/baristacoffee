@@ -21,19 +21,6 @@ contactBtn.addEventListener('click', () => {
 	mainNav.classList.toggle('navSlide');
 });
 
-// active page
-
-// const activePage = window.location.pathname;
-// const navLinks = document.querySelectorAll('.mainNav a');
-
-
-
-// navLinks.forEach((link) => {
-//   if(link.href.includes(`${activePage}`)) {
-//       link.classList.add('activePage');
-//   };
-// });
-
 
 
 
