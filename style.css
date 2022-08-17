@@ -677,16 +677,18 @@ footer .copyright {
   padding: 3rem;
 }
 
-.tagline h3 {
+.tagline p:nth-of-type(1) {
   font-size: 1.5rem;
   text-align: center;
   margin: 0 auto;
+  font-family: 'Playfair Display', serif;
 }
 
-.tagline p {
+.tagline p:nth-of-type(2) {
   font-size: 1rem;
   text-align: center;
   margin: 2rem auto 0 auto;
+  font-family: sans-serif;
 }
 
 @media screen and (min-width: 1000px) {
@@ -743,7 +745,7 @@ footer .copyright {
   background-color: var(--primaryColor);
 }
 
-.tagOne h3 {
+.tagOne p {
   color: var(--white);
 }
 
@@ -816,7 +818,7 @@ footer .copyright {
   background-color: var(--white);
 }
 
-.tagTwo h3 {
+.tagTwo p {
   color: var(--primaryColor);
 }
 
@@ -1050,8 +1052,8 @@ footer .copyright {
 }
 
 .tagFive {
-  background-color: var(--secondaryColor);
-  color: var(--white);
+  background-color: var(--secondaryColorDkr);
+  color: var(--secondaryColorLt);
 }
 
 @media screen and (min-width: 1000px) {
@@ -1172,8 +1174,8 @@ footer .copyright {
 /*#region*/
 
 .menuPageHero {
-  color: var(--secondaryColorLt);
-  background-color: var(--primaryColor);
+  color: var(--primaryColor);
+  background-color: var(--white);
 }
 
 .menuGrid {
