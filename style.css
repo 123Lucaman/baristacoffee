@@ -1012,15 +1012,13 @@ footer .copyright {
 
 /* Quality Section */
 /*#region*/
-
+/* 
 .ourCoffeePageQuality .img-wrap {
   height: auto;
-  /* background-color: aqua; */
   padding: 4rem 0;
 }
 
-.ourCoffeePageQuality.img-wrap img {
-  /* min-height: 100%; */
+.ourCoffeePageQuality .img-wrap img {
   height: 100%;
 }
 
@@ -1033,22 +1031,38 @@ footer .copyright {
   .ourCoffeePageQuality .borderImg:nth-of-type(2) {
     grid-area: 2/1/3/2;
   }
-}
+} */
 
 /*#endregion*/
 
 /* FairTrade Section */
 /*#region*/
 
-.ourCoffeePageFairTrade .img-wrap {
+#ourCoffeePage .ourCoffeePageFairTrade,
+#ourCoffeePage .ourCoffeePageSustainability,
+#ourCoffeePage .ourCoffeePageQuality {
+  background-color: var(--secondaryColorDk);
+  color: var(--white);
+}
+
+.ourCoffeePageFairTrade .img-wrap,
+.ourCoffeePageSustainability .img-wrap,
+.ourCoffeePageQuality .img-wrap {
   height: auto;
-  /* background-color: aqua; */
   padding: 4rem 0;
 }
 
-.ourCoffeePageFairTrade.img-wrap img {
-  /* min-height: 100%; */
+.ourCoffeePageFairTrade .img-wrap img,
+.ourCoffeePageSustainability .img-wrap img,
+.ourCoffeePageQuality .img-wrap img {
   height: 100%;
+}
+
+.ourCoffeePageFairTrade h2,
+.ourCoffeePageSustainability h2,
+.ourCoffeePageQuality h2 {
+  text-align: left!important;
+  font-size: 1.75rem;
 }
 
 .tagFive {
@@ -1057,10 +1071,23 @@ footer .copyright {
 }
 
 @media screen and (min-width: 1000px) {
-  .ourCoffeePageFairTrade .borderImg:nth-of-type(2) {
+  .ourCoffeePageFairTrade .img-wrap-six,
+  .ourCoffeePageSustainability .img-wrap-eight,
+  .ourCoffeePageQuality .img-wrap-four {
     grid-area: 2/1/3/2;
   }
+
 }
+
+@media screen and (min-width: 1000px) {
+   .ourCoffeePageFairTrade img,
+   .ourCoffeePageSustainability img,
+   .ourCoffeePageQuality img {
+    background-color: var(--whiteDk);
+  }
+}
+
+/* fair trade ASIDE links image */
 
 #ourCoffeePage aside {
   width: 100%;
@@ -1082,10 +1109,6 @@ footer .copyright {
   max-width: 1920px;
 }
 
-#ourCoffeePage .ourCoffeePageFairTrade {
-  background-color: var(--secondaryColorDk);
-  color: var(--white);
-}
 
 #ourCoffeePage aside img {
   height: 50px;
@@ -1144,16 +1167,21 @@ footer .copyright {
   }
 }
 
-@media screen and (min-width: 1000px) {
-  #ourCoffeePage .ourCoffeePageFairTrade img {
-    background-color: var(--whiteDk);
-  }
-}
+
 
 /*#endregion*/
 
 /* Sustainability Section */
 /*#region*/
+
+/* .ourCoffeePageSustainability .img-wrap {
+  height: auto;
+  padding: 4rem 0;
+}
+
+.ourCoffeePageSustainability .img-wrap img {
+  height: 100%;
+}
 
 .tagSix {
   background-color: var(--secondaryColorDk);
@@ -1162,9 +1190,8 @@ footer .copyright {
 
 @media screen and (min-width: 1000px) {
   .ourCoffeePageSustainability .borderImg:nth-of-type(2) {
-    grid-area: 2/1/3/2;
   }
-}
+} */
 
 /*#endregion*/
 
